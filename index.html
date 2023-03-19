@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="log">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="head-icon">
+            <img src="img/location.png" alt="" height="35px" width="35px">
+            
+        </div>
+        <div class="content">
+            <p>Nearest Charging Station</p>
+            <h2>Kathmandu</h2>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Ev Finder</li>
+                <li>Compare</li>
+                <li>Browse</li>
+            </ul>
+        </nav>
+        <div class="search-icon">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <!--gif section-->
+    <div class="gif">
+
+        <div class="value1">
+            <h1> Compare <span>&</span> Drive</h1>
+        <h2>Away The Best EV For YOU</h2>
+        <button class="btn1">
+           <p>Why Choose EV</p>
+        </button>
+        </div>
+    </div>
+    <!--third  part-->
+        <section>
+            <div class="container">
+                <div class="heading-text">
+                    <h1>Top Selling EVs of 2020</h1>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>Car</li>
+                        <li>Bike</li>
+                        <li>Scooter</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+            <div class="container1">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/a.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/b.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/p.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/r (2).png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/t.png" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+            </div>
+            <div class="btn2">
+                <button>
+                    <p>Compare</p>
+                </button>
+            </div>
+       
+        <!--footer-->
+        <div class="footer">
+            <div class="footer-list">
+                <ul>
+                    <li>Home</li>
+                    <li>EV Finder</li>
+                    <li>Compare</li>
+                    <li>Browse</li>
+                    <li>News</li>
+                </ul>
+            </div>
+                <div class="logo2">
+                    <img src="img/logo 2.png" alt="">
+                    <p> &#169; ALL Right Reserved 2023</p>
+                </div>
+                <div class="social">
+                    <div class="social-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <h3>waterflow Technology</h3>
+                    <p>Kathmandu Nepal</p>
+                </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/0133e98403.js" crossorigin="anonymous"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay:{
+                delay:3000,
+                disableOnInteraction: false,
+            },
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+    </script>
+</body>
+</html>
