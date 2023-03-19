@@ -68,6 +68,7 @@ nav ul li:hover{
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin: 0px 28px;
 }
 .value1 h1{
     font-size: 70px;
@@ -150,10 +151,9 @@ nav ul li:hover{
 .swiper .swiper-pagination-bullet-active{
     background: white;
 }
-/*button*/
+/*button*/ 
 
 .btn2{
-    align-items: center;
     text-align: center;
     font-size: 24px;
     margin: 60px;
