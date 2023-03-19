@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="in"></script>
+    
     <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
+    <!--nav-->
     <div class="header">
         <div class="log">
             <img src="img/logo.png" alt="">
         </div>
         <div class="head-icon">
-            <img src="img/location.png" alt="" height="35px" width="40px">
-            
+            <img src="img/location.png" alt="" height="35px" width="40px"> 
         </div>
         <div class="content">
             <p>Nearest Charging Station</p>
@@ -37,7 +37,11 @@
     </div>
     <!--gif section-->
     <div class="gif">
-
+        <div class="video-overlay">
+            <video  autoplay muted loop >
+                <source src="video/main-video.mp4" type="video/mp4" >
+              </video>
+        </div>
         <div class="value1">
             <h1> Compare <span>&</span> Drive</h1>
         <h2>Away The Best EV For YOU</h2>
@@ -110,24 +114,7 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/0133e98403.js" crossorigin="anonymous"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            autoplay:{
-                delay:3000,
-                disableOnInteraction: false,
-            },
-  loop: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable:true,
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-    </script>
+    <script src="index.js"></script>
+   
 </body>
 </html>
