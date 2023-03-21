@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="compare.css">
+    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+</head>
+<body>
+     <!--nav-->
+     <div class="header">
+        <div class="log">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="head-icon">
+            <img src="img/location.png" alt="" height="35px" width="40px"> 
+        </div>
+        <div class="content">
+            <p>Nearest Charging Station</p>
+            <h2>Kathmandu</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="EV-finder.html">Ev Finder</a></li>
+                <li><a href="compare.html">Compare</a></li>
+                <li><a href="#">Browse</a></li>
+            </ul>
+        </nav>
+        <div class="search-icon">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <!-- heading-->
+    <div class="heading">
+        <h1>Compare Vehicles Model</h1>
+    </div>
+    <div class="button">
+        <div class="selector">
+            <div id="selectfield">
+                <p id="selecttext">select</p>
+                 <img src="vector-img/Group 15.jpg" alt="" id="arrowicon">
+            </div>
+            <ul id="list" class="hide">
+                <li class="option"><p>tesla</p></li>
+                <li class="option"><p>audi</p></li>
+                <li class="option"><p>tata</p></li>
+                <li class="option"><p>honda</p></li>
+            </ul>
+           </div>
+           <!--secoond-->
+           <div class="selector1">
+            <div id="selectfield1">
+                <p id="selecttext1">choose</p>
+                 <img src="vector-img/Group 15.jpg" alt="" id="arrowicon1">
+            </div>
+            <ul id="list1" class="hide1">
+                <li class="option1"><p>ok</p></li>
+                <li class="option1"><p>ok</p></li>
+                <li class="option1"><p>ok</p></li>
+                <li class="option1"><p>dfs</p></li>
+            </ul>
+           </div>
+           <!--third-->
+           <div class="selector2">
+            <div id="selectfield2">
+                <p id="selecttext2">choose</p>
+                 <img src="vector-img/Group 15.jpg" alt="" id="arrowicon2">
+            </div>
+            <ul id="list2" class="hide2">
+                <li class="option2"><p>pcc</p></li>
+                <li class="option2"><p>ok</p></li>
+                <li class="option2"><p>ok</p></li>
+                <li class="option2"><p>csd</p></li>
+            </ul>
+           </div>
+    </div>
+       
+    <div class="container">
+        <div class="box1">
+        </div>
+        <div class="box1">
+
+        </div>
+        <div class="box1">
+        </div>
+    </div>
+    <hr>
+   <script>
+    var selectfield =document.getElementById("selectfield");
+    var selecttext=document.getElementById("selecttext");
+    var option = document.getElementsByClassName("option");
+    var list = document.getElementById("list");
+    var arrowicon = document.getElementById("arrowicon");
+
+    selectfield.onclick = function(){
+        list.classList.toggle("hide");
+        arrowicon.classList.toggle("rotate");
+
+    }
+    for (option of option){
+        option.onclick = function(){
+            selecttext.innerHTML = this.textContent;
+            list.classList.toggle("hide");
+            arrowicon.classList.toggle("rotate");
+        }
+    }
+    <!--second-->
+    var selectfield1 =document.getElementById("selectfield1");
+    var selecttext1=document.getElementById("selecttext1");
+    var option1 = document.getElementsByClassName("option1");
+    var list1 = document.getElementById("list1");
+    var arrowicon1 = document.getElementById("arrowicon1");
+
+    selectfield1.onclick = function(){
+        list1.classList.toggle("hide1");
+        arrowicon1.classList.toggle("rotate1");
+
+    }
+    for (option1 of option1){
+        option1.onclick = function(){
+            selecttext1.innerHTML = this.textContent;
+            list1.classList.toggle("hide1");
+            arrowicon1.classList.toggle("rotate1");
+        }
+    }
+  /*third*/
+  var selectfield2 =document.getElementById("selectfield2");
+    var selecttext2=document.getElementById("selecttext2");
+    var option2 = document.getElementsByClassName("option2");
+    var list2 = document.getElementById("list2");
+    var arrowicon2 = document.getElementById("arrowicon2");
+
+    selectfield2.onclick = function(){
+        list2.classList.toggle("hide2");
+        arrowicon2.classList.toggle("rotate2");
+
+    }
+    for (option2 of option2){
+        option2.onclick = function(){
+            selecttext2.innerHTML = this.textContent;
+            list2.classList.toggle("hide2");
+            arrowicon2.classList.toggle("rotate2");
+        }
+    }
+    
+    
+   </script>
+
+    <script src="https://kit.fontawesome.com/0133e98403.js" crossorigin="anonymous"></script>
+</body>
+</html>
